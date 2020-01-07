@@ -2,18 +2,18 @@
 
 ## HTML, CSS e FlexBox
 
-TL;DR
+### TL;DR
 
 - Estrutura da página (semântica)
 - Importar dependências externas (fontes, folhas de estilo)
 - Estilização da página
 - Design responsivo
 
-## Sobre
+#### Sobre
 
 Aprenda HTML5 e CSS3 para saber como criar páginas web, juntamente com FlexBox para que elas sejam responsivas e acessiveis em todos os dispositivos!
 
-## Quiz
+### Quiz
 
 O que HTML significa?
 
@@ -51,7 +51,7 @@ Quais são valores válidos para a propriedade `justify-content`?
 - baseline, stretch e space-between.
 - baseline, space-between e flex-end.
 
-## Refs
+### Refs
 
 https://learn.shayhowe.com/html-css/building-your-first-web-page/
 https://www.w3schools.com/html/html5_semantic_elements.asp
