@@ -16,7 +16,7 @@ Listar repositórios de usuário do GitHub
 
 #### Sobre
 
-O GitHub é a nossa rede social, e por que não usar sua API junto com os seus novos conhecimentos em programação asíncrona, validação de formulários e consumo de APIS pra construir algo novo? O seu objetivo é criar uma aplicação que lista os respositórios de um usuário do GitHub!
+O GitHub é a nossa rede social, e por que não usar sua API junto com os seus novos conhecimentos em programação asíncrona, validação de formulários e consumo de APIS pra construir algo novo? O seu objetivo é criar uma aplicação que lista os repositórios de um usuário do GitHub!
 
 #### Requisitos
 
@@ -30,7 +30,7 @@ O GitHub é a nossa rede social, e por que não usar sua API junto com os seus n
 - Se o usuário não tiver nenhum repositório, exibir um "Empty State" de "O usuário não tem nenhum repositório"
 - Se a request for bem sucessida e o usuário tendo 1 ou mais repositórios, liste-os.
   - Deve-se exibir ao menos informaçōes básicas do repositório (nome, link e número de stars)
-- Assim que o conteúdo do `input` ser alterado (ao submit do formulário) a lista deve ser limpa.
+- Assim que o conteúdo do `input` for alterado (ao submit do formulário) a lista deve ser deletada.
 
 #### Notas
 

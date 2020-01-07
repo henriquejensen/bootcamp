@@ -1,3 +1,3 @@
 # Semana 10
 
-## Revisão projeto final
+## Revisão do projeto final

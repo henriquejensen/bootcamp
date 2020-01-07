@@ -11,7 +11,7 @@
 
 #### Sobre
 
-Aprenda HTML5 e CSS3 para saber como criar páginas web, juntamente com FlexBox para que elas sejam responsivas e acessiveis em todos os dispositivos!
+Aprenda HTML5 e CSS3 para saber como criar páginas web, juntamente com FlexBox para que elas sejam responsivas e acessíveis em todos os dispositivos!
 
 ### Quiz
 

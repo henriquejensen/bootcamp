@@ -14,7 +14,7 @@ Praticar a manipulação do DOM criando um "Verificador de Palíndromo"
 
 #### Sobre
 
-Javascript, linguagem formalmente chama de ECMAscript, foi criada pelo `Brandon Eich` com o propósito de tornar a web mais dinâmica.
+Javascript, linguagem formalmente chamada de ECMAScript, foi criada pelo `Brandon Eich` com o propósito de tornar a web mais dinâmica.
 Compreenda e estude os conceitos básicos, para assim conseguir criar um "Verificador de Palíndromo"!
 Mas o que é um palíndromo afinal? Segundo o dicionário: diz-se de ou frase ou palavra que se pode ler, indiferentemente, da esquerda para a direita ou vice-versa.
 Com isto, crie uma aplicação que recebe um texto e exibir se é ou não um Palíndromo, juntamente com o histórico de verificaçōes.

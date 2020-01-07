@@ -17,7 +17,7 @@ Refatorar a aplicação da semana 3
 
 #### Sobre
 
-Finalmente começaremos a estudar o React! Nesta primeira parte você vai aprender todos os conceitos básicos do React, de seu "Ciclo de vida" até o que são, para o que servem e como criar Componentes! Com este conhecimento, o seu objetivo sera de refatorar a aplicação da semana 3 usando React e a sua reatividade!
+Finalmente começaremos a estudar o React! Nesta primeira parte você vai aprender todos os conceitos básicos do React, de seu "Ciclo de vida" até o que são, para o que servem e como criar Componentes! Com este conhecimento, o seu objetivo será de refatorar a aplicação da semana 3 usando React e a sua reatividade!
 
 #### Requisitos
 

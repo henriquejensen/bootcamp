@@ -11,7 +11,7 @@
 
 #### Sobre
 
-Já que recriar a roda não é o trabalho dos desenvolvedores, surgem os Frameworks para economizam o nosso tempo!
+Já que recriar a roda não é o trabalho dos desenvolvedores, surgem os Frameworks para economizarem o nosso tempo!
 Aprenda o que eles são, como funcionam, e com eles crie páginas e sistemas usando algum de sua preferência!
 
 ### Quiz
