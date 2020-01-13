@@ -31,7 +31,7 @@ html
 
 ## Headings
 
-h1, h2, h3, h4, h5, h5
+h1, h2, h3, h4, h5, h6
 
 # Paragraph
 
@@ -51,7 +51,7 @@ Estruturam o HTML, melhoram a leitura e ajudam o SEO e a acessibilidade
 
 ## Adicionando imagens
 
-<img src="" alt="">
+<img src="" alt="" />
 
 ## Adicionando links
 
@@ -165,3 +165,8 @@ Uma tag com o proposito geral de containers para outros elementos é a tag `<div
   </ul>
 </div>
 ```
+
+
+?username=dfasdfas&password=asdfasdf
+
+?username=react%40facebook.com&password=12345&terms=on

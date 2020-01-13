@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portal Kroton</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style2.css">        
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#main">Login</a>
+                </li>
+                <li>
+                    <a href="#footer">Footer</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="flex">
+            <div class="container">
+                <img src="https://clearpass2.kroton.com.br/guest/public/kroton-logo.png" alt="Logo da Kroton" />
+                <h1 class="blue-text">Portal Kroton</h1>
+            
+                <main id="main">
+                    <h2 class="info-login">Please login to the network using your username and password.</h2>
+
+                    <form action="/api-login">
+                        <div class="input-form">
+                            <label>
+                                Username
+                                <input type="text" required placeholder="Coloque seu nome de usuario" name="username" value="react@facebook.com" />
+                            </label>
+
+                            <label>
+                                Password
+                                <input type="password" required placeholder="Coloque sua senha" name="password" />
+                            </label>
+                        </div>
+
+                        <label for="terms">
+                            <p>Terms:</p>
+                            <input id="terms" type="checkbox" name="terms">I accept the terms of use
+                        </label>
+
+                        <button type="submit">Log in</button>
+                    </form>
+                    <div>
+                        <a target="_blank" href="https://clearpass2.kroton.com.br/guest/guest-kroton.php?_browser=1">
+                            Criar uma conta de Convidado
+                        </a>
+                    </div>
+                </main>
+        </div>
+    </div>
+
+        <section class="propaganda">
+            Propaganda
+        </section>
+        
+        <footer id="footer">Minha footer</footer>
+    </body>
+</html>
