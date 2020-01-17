@@ -285,4 +285,82 @@ form-control -> classe filha do form-group
 btn -> classe base para botoes
 btn-primary -> classe que aplica a cor primaria do bootstrap no botao
 
+Para a segunda coluna o codigo deverá ser o seguinte
+
+```html
+<form>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label" for="username">Username</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" name="username" id="username" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label" for="password">Password</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" name="password" id="password" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-sm-10 offset-sm-2">
+      <button class="btn btn-primary">
+        Submit
+      </button>
+    </div>
+  </div>
+</form>
+```
+
+col-form-label -> aplica propriedades para alinhar o label
+offset-sm-2 -> "pula" duas colunas no grid, este valor pode ser qualquer um entre 1 e 12
+
+Para a terceira coluna, vamos criar uma nova linha e vamos ocupar todas as colunas por isso o col-12
+
+```html
+<div class="row">
+  <div class="col-12">
+    <form action="" class="form-inline">
+      <div class="form-group">
+        <label class="pr-1" for="username">Username</label>
+        <div class="">
+          <input
+            class="px-1 form-control"
+            type="text"
+            name="username"
+            id="username"
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="px-1" for="password">Password</label>
+        <div class="">
+          <input
+            class="px-1 form-control"
+            type="text"
+            name="password"
+            id="password"
+          />
+        </div>
+      </div>
+
+      <button class="mx-1 btn btn-primary">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+```
+
+form-inline -> classe que coloca o formulario em 1 linha
+pr-1 -> adiciona um padding de 1px a esquerda. A classe p adiciona padding e suas variantes são pr (padding right), pl(left), px(x axis), py (axis), pt (top)
+mx-1 -> adiciona margin ao elemento, na mesma ideia do padding
+
+### Trabalhando com tabelas
+
+Dentro da pasta `dist` crie a partir do html da `index.html` um arquivo `tables.html`
+Dentro da tag body crie o layout do seu forms
+
 ## Customizando o bootstrap
