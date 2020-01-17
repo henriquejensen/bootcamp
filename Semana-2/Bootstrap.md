@@ -363,4 +363,80 @@ mx-1 -> adiciona margin ao elemento, na mesma ideia do padding
 Dentro da pasta `dist` crie a partir do html da `index.html` um arquivo `tables.html`
 Dentro da tag body crie o layout do seu forms
 
+Table em bootstrap não é um componente e sim um opt-in. Para usarmos somente adicionamos a class `table` para a tag table e ja temos o layout dela.
+
+```html
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr class="table-success">
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+```
+
+thead-dark -> muda a cord do cabecalho, podemos variar para thead-primary, thead-light e etc
+table-bordered -> cria uma borda em volta de toda a tabela
+table-striped -> diferencia as cores das linhas da tabela, uma fica escura e a outra clara
+table-responsive -> usado em uma div em volta da tabela para inserir uma barra de rolagem quando temos uma tela menor que a tabela
+table-success -> usado para aplicar cor a linha da tabela, pode variar por todas as cores do bootstrap
+
 ## Customizando o bootstrap
