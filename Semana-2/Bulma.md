@@ -42,3 +42,15 @@ https://bulma.io/documentation/
 - Card
 - Menu
 - Pagination
+
+### Criando um projeto
+
+- Adicione um Hero com a cor primaria
+- Adicione um Footer apos o Hero
+- mostra pq a section envolve o container e como o container centraliza os elementos em paginas grandes
+- Adicione duas Section logo apos o Hero
+- Mostre a responsividade da pagina
+- Adicione 4 Columns dentro da primeira Section
+- Adicione as classes "notification is-primary" para a coluna 1 e 3
+- Adicione a coluna 3 a classe "is-6"
+- Adicione outra Section e dentro dela insira um Level
