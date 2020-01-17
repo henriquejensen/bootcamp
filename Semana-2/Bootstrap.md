@@ -361,7 +361,7 @@ mx-1 -> adiciona margin ao elemento, na mesma ideia do padding
 ### Trabalhando com tabelas
 
 Dentro da pasta `dist` crie a partir do html da `index.html` um arquivo `tables.html`
-Dentro da tag body crie o layout do seu forms
+Dentro da tag body crie o layout da sua tabela.
 
 Table em bootstrap não é um componente e sim um opt-in. Para usarmos somente adicionamos a class `table` para a tag table e ja temos o layout dela.
 
@@ -438,5 +438,85 @@ table-bordered -> cria uma borda em volta de toda a tabela
 table-striped -> diferencia as cores das linhas da tabela, uma fica escura e a outra clara
 table-responsive -> usado em uma div em volta da tabela para inserir uma barra de rolagem quando temos uma tela menor que a tabela
 table-success -> usado para aplicar cor a linha da tabela, pode variar por todas as cores do bootstrap
+
+### Trabalhando com cards
+
+Dentro da pasta `dist` crie a partir do html da `index.html` um arquivo `cards.html`
+Dentro da tag body crie o layout do seu card.
+
+Os cards no bootstrap são containeres de conteudo extensíveis.
+Geralmente dividimos nossos cards em três partes: Header, Body e Footer.
+
+```html
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">
+          <h2>Card Title</h2>
+        </div>
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, et est
+          ducimus recusandae odit amet modi ipsum aut facilis, nostrum alias
+          dignissimos quidem dolor earum quis quia temporibus numquam!
+          Assumenda.
+        </div>
+        <div class="card-footer">Footer</div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">
+          <h2>Card Title</h2>
+        </div>
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, et est
+          ducimus recusandae odit amet modi ipsum aut facilis, nostrum alias
+          dignissimos quidem dolor earum quis quia temporibus numquam!
+          Assumenda.
+        </div>
+        <div class="card-footer">Footer</div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-6">
+      <div class="card bg-primary">
+        <div class="card-header">
+          <h2>Card Title</h2>
+        </div>
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, et est
+          ducimus recusandae odit amet modi ipsum aut facilis, nostrum alias
+          dignissimos quidem dolor earum quis quia temporibus numquam!
+          Assumenda.
+        </div>
+        <div class="card-footer">Footer</div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header bg-danger">
+          <h2>Card Title</h2>
+        </div>
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, et est
+          ducimus recusandae odit amet modi ipsum aut facilis, nostrum alias
+          dignissimos quidem dolor earum quis quia temporibus numquam!
+          Assumenda.
+        </div>
+        <div class="card-footer">Footer</div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+container-fluid -> permite que os cards ocupam toda a extensão da tela
+card -> classe container do card
+card-header -> cria um elemento header dentro do card
+card-body -> classe que englobara o conteudo do seu card
+card-footer -> cria um elemento footer dentro do card
+bg-danger -> a classe bg altera a cor do background do elemento
 
 ## Customizando o bootstrap
