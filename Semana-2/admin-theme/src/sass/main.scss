@@ -1,0 +1,22 @@
+/*!
+* HQ Admin Theme
+* Author: Henrique Jensen
+*/
+
+//Bootstrap
+@import "_vars.scss";
+@import "_customize-bootstrap.scss";
+@import "~bootstrap/scss/bootstrap"; //import de dentro da node_modules
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+
+//App layout
+
+@import "app/components/app";
+@import "app/components/app-header";
+@import "app/components/app-sidebar";
+@import "app/components/app-sidebar-mini";
+@import "app/components/app-title";
