@@ -40,7 +40,7 @@ Classe default dos botoes é `btn`.
 
 O bootstrap utiliza um grid de 12 colunas baseado no flexbox do CSS.
 Ele possui diferentes tipos de larguras que pdoemos especificar.
-Extra small, <576px, nao tem uma largura máxima, col-xs
+Extra small, <576px, nao tem uma largura máxima, col-
 Small, >= 576px, largura maxima do container 540px, col-sm-
 Medium, >= 768px, largura maxima do container 720px, col-md-
 Large, >= 992px, largura maxima do container 960px, col-lg-
@@ -83,12 +83,26 @@ Voce pode usar as classes de icones na tag <i>, exemplo de um botão de like
 
 ### Construindo do 0
 
+- crie uma pagina html e adicione o link do bootstrap na header
 - crie um elemento h3 com o texto 'AceleraDev React'
 - aplique ao h3 a classe text-primary e centralize com text-center
 - envolva a h3 com uma div de classe container-fluid
 - abaixo da h3 crie uma div row
-- dentro da row, crie duas div de coluna de tamanho 6 extra small, col-xs-6
+- dentro da row, crie duas div de coluna de tamanho 6 extra small, col-6
 - dentro de cada coluna crie uma div card
-- crie 3 butoes em cada card
-- aplique a classe bnt e btn-default para cada botão
-- crie um header com a classe card-header dentro de cada card
+- crie um header com a classe card-header dentro de cada card e coloque o texto Inicio no primeiro e Fim no segundo
+- crie a div card-body logo apos a div card-header em ambos os cards
+- crie a div card-footer logo apos a div card-body somente no card Inicio
+- crie 2 botoes dentro da card-footer
+- primeiro botao com as classes btn btn-secondary e texto "Cancelar"
+- primeiro botao com as classes btn btn-primary e texto "Adicionar"
+- envolva os botoes numa div row e de um espaco entre eles com a classe justify-content-between
+- dentro da div body do card inicio insira uma div card-title com o texto "Objetivos"
+- logo apos a div card-title insira um form com a classe form-inline
+- dentro do form crie uma div form-group
+- dentro do form group crie uma label com a classe form-label e mr-4 para criar margem, Insira o texto "Objetivo"
+- logo apos a label crie o input text com a classe form-control
+- no card Fim, crie a uma table dentro da div body, e adciona a classe table a ela
+- crie a thead dentro da table com a classe thead-dark
+- insira dois header com a tag th, o primeiro com o texto Objetivo e o outro Data
+- apos a thead crie a tbody e adicione linhas com dados fakes para ela
