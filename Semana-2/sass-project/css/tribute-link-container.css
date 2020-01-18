@@ -1,0 +1,8 @@
+.link {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center; }
+  .link a {
+    color: #477ca7; }
+    .link a:visited {
+      color: #74638f; }

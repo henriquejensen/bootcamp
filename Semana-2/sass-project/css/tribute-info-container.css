@@ -1,0 +1,10 @@
+#tribute-info {
+  max-width: 550px;
+  margin-bottom: 20px; }
+  #tribute-info h2 {
+    font-size: 20px;
+    text-align: center; }
+  #tribute-info em {
+    text-align: center; }
+  #tribute-info ul li {
+    margin-bottom: 15px; }

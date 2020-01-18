@@ -1,0 +1,22 @@
+// Colors
+$background-color: #eee;
+$background-color-img: white;
+
+@import "image-container";
+@import "title-container";
+@import "tribute-info-container";
+@import "tribute-link-container";
+
+#main {
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,46 @@
+#img-div {
+  background-color: white;
+  width: 100%; }
+  #img-div img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; }
+
+#img-caption {
+  text-align: center; }
+
+#title {
+  font-size: 2.5rem;
+  margin-bottom: 0; }
+
+#tribute-info {
+  max-width: 550px;
+  margin-bottom: 20px; }
+  #tribute-info h2 {
+    font-size: 20px;
+    text-align: center; }
+  #tribute-info em {
+    text-align: center; }
+  #tribute-info ul li {
+    margin-bottom: 15px; }
+
+.link {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center; }
+  .link a {
+    color: #477ca7; }
+    .link a:visited {
+      color: #74638f; }
+
+#main {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px; }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }

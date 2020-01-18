@@ -1,0 +1,16 @@
+$link-color-visited: #74638f;
+$link-color: #477ca7;
+
+.link {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+
+  a {
+    color: $link-color;
+
+    &:visited {
+      color: $link-color-visited;
+    }
+  }
+}
