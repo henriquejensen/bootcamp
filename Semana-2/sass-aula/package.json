@@ -1,0 +1,19 @@
+{
+  "name": "sass-aula",
+  "version": "1.0.0",
+  "description": "aprendendo sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch sass -o css"
+  },
+  "keywords": [
+    "sass",
+    "css"
+  ],
+  "author": "Henrique Jensen",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

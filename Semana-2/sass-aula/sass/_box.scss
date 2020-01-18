@@ -1,0 +1,19 @@
+.box {
+  @extend .flex;
+  justify-content: space-between;
+}
+
+@each $key, $color in $colors {
+  #box-#{$key} {
+    background-color: $color;
+  }
+}
+
+$count: 1;
+@while $count < 4 {
+  #box-#{$count} {
+    width: 100px * $count;
+    height: 100px * $count;
+  }
+  $count: $count + 1;
+}

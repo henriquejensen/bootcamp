@@ -24,7 +24,7 @@ Existem algumas formas de usar o sass no seu projeto, mas aqui vamos usar via no
 ## Variaveis
 
 Assim como JS o Sass tambem possui variáveis para armazenar algum valor.
-Para definir uma variavel basta usar o simbolo \$ seguido do nome da variavel
+Para definir uma variavel basta usar o simbolo `$` seguido do nome da variavel
 
 ```scss
 $main-fonts: Arial, sans-serif;
@@ -51,6 +51,10 @@ nav ul {
 }
 
 nav ul li {
+  display: inline-block;
+}
+
+nav ul li a span div {
   display: inline-block;
 }
 ```

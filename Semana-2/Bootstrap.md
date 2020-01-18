@@ -18,8 +18,8 @@ do Bootstrap na sua pagina.
 
 ## Trabalhando com responsividade
 
-- container-fluids - Usada para deixar o conteudo ocupar toda a tela
-- img-responsive - Usada para ajustar a largura das imagens ao tamanho da tela
+- container-fluid - Usada para deixar o conteudo ocupar toda a tela
+- img-fluid - Usada para ajustar a largura das imagens ao tamanho da tela
 
 ### Trabalhando com textos
 
@@ -39,7 +39,7 @@ Classe default dos botoes é `btn`.
 ### Trabalhando com Grid
 
 O bootstrap utiliza um grid de 12 colunas baseado no flexbox do CSS.
-Ele possui diferentes tipos de larguras que pdoemos especificar.
+Ele possui diferentes tipos de larguras que podemos especificar.
 Extra small, <576px, nao tem uma largura máxima, col-
 Small, >= 576px, largura maxima do container 540px, col-sm-
 Medium, >= 768px, largura maxima do container 720px, col-md-

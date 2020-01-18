@@ -1,0 +1,32 @@
+@import "variables";
+
+@mixin box-shadow($axis-x, $axis-y, $blur, $color) {
+  -webkit-box-shadow: $axis-x $axis-y $blur $color;
+  -moz-box-shadow: $axis-x $axis-y $blur $color;
+  -ms-box-shadow: $axis-x $axis-y $blur $color;
+  box-shadow: $axis-x $axis-y $blur $color;
+}
+
+@mixin text-color($number) {
+  @if $number == 1 {
+    font-size: 20px;
+    color: $primary;
+  } @else if $number == 2 {
+    color: $secondary;
+  } @else {
+    color: $headings-color;
+  }
+}
+
+body {
+  background-color: $info;
+  font-family: $main-fonts;
+}
+
+.flex {
+  display: flex;
+  border: 3px dashed purple;
+}
+
+@import "header";
+@import "box";

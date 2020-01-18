@@ -1,0 +1,42 @@
+//Section Header
+.main {
+  background-color: $danger;
+  @include box-shadow(10px, 5px, 5px, black);
+
+  h1 {
+    font-size: $font-size * 6;
+  }
+
+  .main-content {
+    @extend .flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.menu {
+  @extend .flex;
+  justify-content: center;
+
+  ul {
+    @extend .flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+    li {
+      padding: 0 10px;
+      @include text-color(2);
+
+      &:hover {
+        @include text-color(1);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@for $i from 1 to 4 {
+  #menu-#{$i} {
+    font-size: 15px * $i;
+  }
+}
