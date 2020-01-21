@@ -34,27 +34,36 @@
       <p>a front end developer</p>
     </section>
     <section id="projects">
-      <div class="project-tile">
-        <header class="project-header">
-          <h1>Dr. Norman Borlagu</h1>
-          <p>The man who save a billion lives</p>
-        </header>
-        <div class="project-body">
-          <img src="#" alt="Tribute Page" />
+      <h1>These are some of my projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <div class="project-tile">
+            <img
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+              alt="Tribute Page"
+            />
+          </div>
+          <footer class="project-footer">
+            <a href="#" target="_blank">Tribute Page</a>
+          </footer>
         </div>
-        <footer class="project-footer">
-          <a href="#" target="_blank">Tribute Page</a>
-        </footer>
       </div>
     </section>
     <section id="contact">
       <div>
+        <h1>Let's work together...</h1>
+        <p>How do you take your coffee?</p>
+      </div>
+      <div class="social-medias">
         <a class="profile-link" href="#" target="_blank">GitHub</a>
+        <a class="profile-link" href="#" target="_blank">Facebook</a>
+        <a class="profile-link" href="#" target="_blank">Twitter</a>
+        <a class="profile-link" href="#mailto:example@example.com"
+          >Send a mail</a
+        >
+        <a class="profile-link" href="tel:1181189899">Call me</a>
       </div>
     </section>
-    <footer>
-      Footer
-    </footer>
     <script src="./index.js"></script>
   </body>
 </html>
@@ -73,6 +82,7 @@ $black: black;
 $red: #be3144;
 $menu-background: $red;
 $menu-hover-background: #45567d;
+$welcome-background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 ```
 
 - criei o arquivo `_navbar.scss` dentro da pasta `sass` e coloquei o seguinte código
@@ -146,7 +156,7 @@ html {
   width: 100%;
   color: $white;
   background-color: $black;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  background-image: $welcome-background;
 
   h1 {
     font-size: 5rem;
@@ -157,6 +167,95 @@ html {
     font-size: 2rem;
     font-weight: 300;
     color: $red;
+  }
+}
+```
+
+- Criei dentro da pasta `sass` o arquivo `_projects.scss` com o seguinte conteudo
+
+```scss
+#projects {
+  background-color: $blue;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 5rem;
+    padding: 8rem 1rem;
+    text-align: center;
+  }
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project {
+  text-align: center;
+}
+
+.project-tile {
+  img {
+    max-width: 100%;
+  }
+}
+
+.project-footer {
+  background-image: $welcome-background;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  a {
+    text-decoration: none;
+    color: $white;
+    font-size: 2rem;
+  }
+}
+```
+
+- Criei dentro da pasta `sass` o arquivo `_contact.scss` com o seguinte conteudo
+
+```scss
+#contact {
+  background-image: $welcome-background;
+  height: 100vh;
+  color: $white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  h1 {
+    font-size: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+    font-style: italic;
+  }
+}
+
+.social-medias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 5rem;
+  a {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 2rem;
   }
 }
 ```
