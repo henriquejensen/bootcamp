@@ -20,6 +20,9 @@
   </head>
   <body class="container">
     <section>
+      <div class="alert alert-success" id="budget-feedback" role="alert">
+        A simple success alert—check it out!
+      </div>
       <form id="budget-form">
         <div class="form-group">
           <label for="budget" id="budget-label">Please Enter Your Budget</label>
@@ -43,43 +46,46 @@
           <div class="col-4">
             <h1>Budget</h1>
             <i class="fas fa-money-bill-alt"></i>
-            <p id="budget">$ 0</p>
+            <p id="budget-value">$ 0</p>
           </div>
           <div class="col-4">
             <h1>Expenses</h1>
             <i class="far fa-credit-card"></i>
-            <p id="expenses">$ 0</p>
+            <p id="expenses-value">$ 0</p>
           </div>
           <div class="col-4">
             <h1>Balance</h1>
             <i class="fas fa-dollar-sign"></i>
-            <p id="balance">$ 0</p>
+            <p id="balance-value">$ 0</p>
           </div>
         </div>
       </div>
     </section>
 
     <section>
+      <div class="alert alert-success" id="expense-feedback" role="alert">
+        A simple success alert—check it out!
+      </div>
       <form id="expense-form">
         <div class="form-group">
-          <label for="budget" id="budget-label"
-            >Please Enter Your Expense</label
-          >
+          <label for="expense" id="expense-label">
+            Please Enter Your Expense
+          </label>
           <input
-            name="budget"
-            id="budget-input"
+            name="expense"
+            id="expense-input"
             class="form-control"
             type="number"
             min="0"
           />
         </div>
         <div class="form-group">
-          <label for="budget" id="budget-label"
-            >Please Enter Your Expense Amount</label
-          >
+          <label for="amount" id="amount-label">
+            Please Enter Your Expense Amount
+          </label>
           <input
-            name="budget"
-            id="budget-input"
+            name="amount"
+            id="amount-input"
             class="form-control"
             type="number"
             min="0"
@@ -93,7 +99,7 @@
 
     <section>
       <div class="table-responsive">
-        <table class="table">
+        <table class="table" id="expense-table">
           <thead>
             <tr>
               <th scope="col">Expense title</th>
