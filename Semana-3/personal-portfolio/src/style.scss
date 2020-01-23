@@ -1,0 +1,17 @@
+@import "sass/reset";
+
+html {
+  font-size: 14px;
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@import "sass/colors";
+@import "sass/navbar";
+@import "sass/welcome";
+@import "sass/projects";
+@import "sass/contact";

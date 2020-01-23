@@ -1,0 +1,45 @@
+#projects {
+  background-color: $blue;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 5rem;
+    padding: 8rem 1rem;
+    text-align: center;
+  }
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project {
+  text-align: center;
+}
+
+.project-tile {
+  img {
+    max-width: 100%;
+  }
+}
+
+.project-footer {
+  background-image: $welcome-background;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  a {
+    text-decoration: none;
+    color: $white;
+    font-size: 2rem;
+  }
+}

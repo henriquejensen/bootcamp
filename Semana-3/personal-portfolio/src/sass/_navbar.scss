@@ -1,0 +1,35 @@
+#navbar {
+  background-color: $menu-background;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+
+  li {
+    cursor: pointer;
+    height: 100%;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+    &:hover {
+      background-color: $menu-hover-background;
+    }
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}
