@@ -45,6 +45,20 @@ const variavelImutavel = 24;
 variavel = 25;
 variavelImutavel = 22; // vai lancar um erro
 var outraVariavel = "React"; //var é a forma antiga de declarar variável
+
+function name() {
+  var x = 34;
+  var r;
+
+  if (true) {
+    r = 22;
+    let w = "henrique";
+  }
+
+  console.log(x);
+  console.log(r);
+  console.log(w);
+}
 ```
 
 ## Operações Matemáticas
@@ -52,6 +66,7 @@ var outraVariavel = "React"; //var é a forma antiga de declarar variável
 ```js
 let sum = 10 + 5;
 let sub = 10 - 5;
+ppp;
 let mult = 10 * 5;
 let divide = 10 / 5;
 let increment = 1;
@@ -78,6 +93,18 @@ let animals = ["dog", "cat", "bird"];
 let [firstAnimal, ...others] = animals;
 console.log(`Este é um ${firstAnimal}`);
 console.log(others);
+
+function getReactVersion(today) {
+  if (today == 2) {
+    return 13;
+  }
+
+  return 12;
+}
+
+function react(fn) {
+  return `O react esta na versao ${fn()}`;
+}
 ```
 
 O rest permite agrupar um numero indefinido de parametros de uma função em uma variavel
