@@ -12,7 +12,7 @@
 - Rodei o script
 - criei a seguinte estrutura padrão baseada no seguinte design
 
-  ![](./mocks/mockup.png)
+  ![Mock](./mocks/mockup.png)
 
 - No arquivo `index.js` criei a classe UI e selecionei todos os elementos
 
