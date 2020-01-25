@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Budget App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
+    <!--     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
@@ -16,13 +16,11 @@
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
-    />
+    /> -->
   </head>
   <body class="container">
     <section>
-      <div class="alert alert-success" id="budget-feedback" role="alert">
-        A simple success alert—check it out!
-      </div>
+      <div class="alert" id="budget-feedback" role="alert"></div>
       <form id="budget-form">
         <div class="form-group">
           <label for="budget" id="budget-label">Please Enter Your Budget</label>
@@ -51,7 +49,7 @@
           <div class="col-4">
             <h1>Expenses</h1>
             <i class="far fa-credit-card"></i>
-            <p id="expenses-value">$ 0</p>
+            <p id="expense-value">$ 0</p>
           </div>
           <div class="col-4">
             <h1>Balance</h1>
@@ -63,9 +61,7 @@
     </section>
 
     <section>
-      <div class="alert alert-success" id="expense-feedback" role="alert">
-        A simple success alert—check it out!
-      </div>
+      <div class="alert" id="expense-feedback" role="alert"></div>
       <form id="expense-form">
         <div class="form-group">
           <label for="expense" id="expense-label">
@@ -75,8 +71,7 @@
             name="expense"
             id="expense-input"
             class="form-control"
-            type="number"
-            min="0"
+            type="text"
           />
         </div>
         <div class="form-group">
@@ -103,7 +98,7 @@
           <thead>
             <tr>
               <th scope="col">Expense title</th>
-              <th scope="col">Expense Value</th>
+              <th scope="col">Expense Value!</th>
               <th scope="col">#</th>
             </tr>
           </thead>
@@ -111,6 +106,6 @@
         </table>
       </div>
     </section>
-    <script src="./index.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
