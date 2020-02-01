@@ -78,6 +78,12 @@ function Table(props) {
               <tr key={index}>
                 <td>{item.produto}</td>
                 <td>{item.valor}</td>
+                <td>
+                  <Button
+                    title="Deletar"
+                    onClick={() => props.onClickDelete(index)}
+                  />
+                </td>
               </tr>
             );
           })}
@@ -107,6 +113,11 @@ function App() {
   };
   const handleClickDeleteAll = () => {
     setProdutos([]);
+  };
+  const handleClickDelete = indexButton => {
+    console.log(`Produto na posição ${indexButton} deletado`);
+    const newProdutos = produtos.filter((item, index) => indexButton !== index);
+    setProdutos(newProdutos);
   };
 
   React.useEffect(() => {
@@ -154,6 +165,7 @@ function App() {
           head={head}
           rows={produtos}
           onClickDeleteAll={handleClickDeleteAll}
+          onClickDelete={handleClickDelete}
         />
       </section>
     </Container>
