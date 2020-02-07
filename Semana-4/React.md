@@ -433,3 +433,130 @@ function App() {
   );
 }
 ```
+
+### Exemplos
+
+- Contador
+- Cronometro
+- Input controlado (usuario digita no input e ele atualiza o valor na tela)
+- Form controlado (Login do usuario) - ele preenche os dados do login e eles são mostrados na tela logado
+- Exemplo passando state e callback como props (Componente pai possui o state e handleState e chama dois filhos passando o state e calback como props)
+- Exemplo com os lifecycles, didMount e willUnmount (pode ser utilizado um eventListener nos dois, um exemplo seria ouvir o evento keydown e passar um handle para alterar o state)
+- Otimizando o componente com o shouldComponentUpdate (exemplo seria atualizar somente quando o valor é par)
+
+## Style
+
+Estilos em React podem ser feitos atraves de classes ou id css assim como no HTML, mas os estilos inline são diferentes.
+Como o JSX é Javascript os estilos devem ser passados como um objeto javascript para a propriedade style
+
+```jsx
+<div style={{ color: "red", fontSize: "12px" }}>Hello my friend</div>
+```
+
+Podemos criar uma variavvel com os estilos, assim o codigo fica mais organizado
+
+```jsx
+const styles = { color: 'red', fontSize: '12px' }
+<div style={styles}>Hello my friend</div>
+```
+
+## Condicionais
+
+Podemos usar if e else para retornar um ou outro componente dentro do método render
+
+```jsx
+if (this.state.isTrue) {
+  return <div>Hello my friend</div>;
+} else {
+  return <div>Hello</div>;
+}
+```
+
+Podemos utilizar o `&&` tambem como condição
+
+```jsx
+  render() {
+    // change code below this line
+    return (
+       <div>
+         <button onClick={this.toggleDisplay}>Toggle Display</button>
+         {this.state.display && <h1>Displayed!</h1>}
+       </div>
+    );
+  }
+```
+
+Mas o mais comum é a utilização de ternários como condição
+
+```jsx
+  render() {
+    const buttonOne = <button onClick={this.submit}>Submit</button>;
+    const buttonTwo = <button>You May Enter</button>;
+    const buttonThree = <button>You Shall Not Pass</button>;
+    return (
+      <div>
+        <h3>Enter Your Age to Continue</h3>
+        <input
+          style={inputStyle}
+          type="number"
+          value={this.state.input}
+          onChange={this.handleChange} /><br />
+        {
+          this.state.userAge == '' ? buttonOne : (
+            this.state.userAge >= 18 ? buttonTwo : buttonThree
+          )
+        }
+      </div>
+    );
+  }
+```
+
+As condicionais são usadas para gerarmos diferentes tipos de estilos, pois podemos alterar o estilo inlino dependendo da condição
+
+```jsx
+  render() {
+    let inputStyle = {
+      border: '1px solid black'
+    };
+    // change code below this line
+    if(this.state.input.length > 15) { inputStyle.border = "3px solid red";}
+    // change code above this line
+    return (
+      <div>
+        <h3>Don't Type Too Much:</h3>
+        <input
+          type="text"
+          style={inputStyle}
+          value={this.state.input}
+          onChange={this.handleChange} />
+      </div>
+    );
+  }
+```
+
+### Renderizando dinamicamente com map
+
+Quando temos um numero indeterminado de elementos para renderizar como componente o metodo map é utilizado.
+
+```jsx
+const frontEndFrameworks = [
+  "React",
+  "Angular",
+  "Ember",
+  "Knockout",
+  "Backbone",
+  "Vue"
+];
+
+function Frameworks() {
+  const renderFrameworks = frontEndFrameworks.map(el => {
+    return <li key={el}>{el}</li>;
+  }); // change code here
+  return (
+    <div>
+      <h1>Popular Front End JavaScript Frameworks</h1>
+      <ul>{renderFrameworks}</ul>
+    </div>
+  );
+}
+```
