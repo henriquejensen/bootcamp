@@ -1,6 +1,6 @@
 # Semana 9
 
-## Fazendo o deploy
+## Deploy de uma SPA
 
 ### TL;DR
 
