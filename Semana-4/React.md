@@ -434,7 +434,7 @@ function App() {
 }
 ```
 
-### Exemplos
+## Exemplos
 
 - Contador
 - Cronometro
