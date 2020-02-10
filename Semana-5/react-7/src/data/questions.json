@@ -1,0 +1,37 @@
+{
+  "questions": [
+    {
+      "id": 111,
+      "rightAnswer": 1,
+      "questionTitle": "Qual é a capital da Argentina",
+      "answers": [
+        { "id": 0, "text": "Mendoza" },
+        { "id": 1, "text": "Buenos Aires" },
+        { "id": 2, "text": "Bariloche" },
+        { "id": 3, "text": "Ushuaia" }
+      ]
+    },
+    {
+      "id": 222,
+      "rightAnswer": 2,
+      "questionTitle": "Qual é a capital da Bolívia",
+      "answers": [
+        { "id": 0, "text": "Santa Cruz" },
+        { "id": 1, "text": "Sucre" },
+        { "id": 2, "text": "La Paz" },
+        { "id": 3, "text": "Cochabamba" }
+      ]
+    },
+    {
+      "id": 333,
+      "rightAnswer": 3,
+      "questionTitle": "Qual é a capital do Uruguay",
+      "answers": [
+        { "id": 0, "text": "Punta del este" },
+        { "id": 1, "text": "Colônia do Sacramento" },
+        { "id": 2, "text": "Salto" },
+        { "id": 3, "text": "Montevidéu" }
+      ]
+    }
+  ]
+}
