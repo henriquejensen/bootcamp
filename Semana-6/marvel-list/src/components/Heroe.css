@@ -1,0 +1,15 @@
+.heroe {
+  background-color: #f0131e;
+  color: white;
+  box-shadow: 2px 2px 5px black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.heroe:active {
+  background-color: #d83c43;
+}
+
+.heroe img {
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+.not-found {
+  text-align: center;
+  font-size: large;
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  right: 25%;
+  color: tomato;
+}
+
+.not-found .number {
+  color: navy;
+  font-size: 60px;
+  margin: 5px;
+}
