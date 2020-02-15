@@ -60,7 +60,7 @@ function App() {
       <Header
         value={entrada}
         onChange={handleChangeInput}
-        erro={7erro}
+        erro={erro}
         onKeyPress={handleKeyPress}
       />
       {herois.length ? (
