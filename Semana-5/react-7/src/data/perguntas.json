@@ -1,0 +1,27 @@
+{
+  "creator": "henrique",
+  "perguntas": [
+    {
+      "id": 1,
+      "title": "Qual a capital do Brasil",
+      "respostaCerta": 4,
+      "alternativas": [
+        { "id": 1, "title": "Buenos Aires" },
+        { "id": 2, "title": "Sao Paulo" },
+        { "id": 3, "title": "Rio" },
+        { "id": 4, "title": "Brasilia" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Qual a capital da China",
+      "respostaCerta": 3,
+      "alternativas": [
+        { "id": 1, "title": "Buenos Aires" },
+        { "id": 2, "title": "Sao Paulo" },
+        { "id": 3, "title": "Pequim" },
+        { "id": 4, "title": "Brasilia" }
+      ]
+    }
+  ]
+}
