@@ -78,4 +78,226 @@ Propriedades: "stretch", "center", "start", "end"
 
 ## Dividindo o grid em area template
 
-Podemos
+Podemos dividir o grid em areas e dar para estas areas nomes curtomizados. Para fazer isso utilizamos o `grid-template-areas` no container:
+
+```css
+grid-template-areas:
+  "header header header"
+  "advert content content"
+  "footer footer footer";
+```
+
+Após darmos nomes as nossas areas podemos colocar um item na area com a propriedade `grid-area`
+
+Neste exemplo estamos dizendo para o item 1 ir para a area header.
+
+```css
+.item {
+  grid-area: header;
+}
+```
+
+### Grid sem nomes
+
+Podemos usar o grid-area sem nomes tambem
+
+No exemplo abaixo estamos dividindo o grid da seguinte maneira
+`grid-area: hinicio da linha horizontam / inicio da linha vertical / fim da linha horizontal / fim da linha vertical;`
+
+```css
+item1 {
+  grid-area: 1/1/2/4;
+}
+```
+
+## Reduzindo repetição com a função repeat
+
+O `grid-template-column` e o `grid-template-rows` além de receberem os valores para cada coluna ou linha do grid podem receber um função como valor que facilita a criação de muitos grids.
+Este valor é a função `repeat` que recebe como parametro o numero de vezes que queremos que o grid se repita e o seu valor.
+
+Neste exemplo queremos que o grid crie 100 colunas de 50px cada
+
+```css
+grid-template-columns: repeat(100, 50px);
+```
+
+Podemos fazer combinações interessantes tambem, como esta, onde criamos 5 colunas onde as 4 primeiras são criadas pelo repeat e a ultima pelo valor manualmente.
+
+```css
+grid-template-columns: repeat(2, 1fr 50px) 20px;
+```
+
+## Limitando o tamanho do item com a função minmax
+
+Outra função built-in para o grid é a minmax, ele é usada para limitar o tamanho dos itens quando o tamanho do container muda.
+
+No exemplo abaixo estamos criando 2 colunas, a primeira com tamanho de 100px e a segunda com a largura minima de 50px e maxima de 200px.
+
+```css
+grid-template-columns: 100px minmax(50px, 200px);
+```
+
+Neste outro exemplo, estamos criando 3 colunas com no minimo 90px e maximo de 1 fração do container, ou seja ele fica responsiva para espaços grandes mas quando diminui vai no maximo a 90px.
+
+```css
+grid-template-columns: repeat(3, minmax(90px, 1fr));
+```
+
+## Layouts flexiveis
+
+### auto-fill
+
+A função repeat vem com uma opção chamada auto-fill, ela permite inserirmos automaticamente quantas linhas ou colunas quisermos que for possivel no espaço do tamanho do container. Ela é usada com o minmax para criar layouts flexiveis.
+
+```css
+grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+```
+
+### auto-fit
+
+Funciona parecido como o auto-fill mas a diferença esta que conforme o container aumente de largura ao inves de ficar preenchendo com espacos vazios como o `auto-fill` o `auto-fit` faz o elementos se encaixarem ao tamanho do container.
+
+```css
+grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+```
+
+## Media queries
+
+Com media-queries podemos fazer um layout responsivo simplesmente rearranjando os grid areas, mudando as dimensões do grid e rearranjando os lugares dos items.
+
+No exemplo abaixo temos um media querie para valores entre 300px e 400px de largura, ele muda o grid de uma coluna só para duas colunas e a quantidade de linhas para 3 linhas. No segundo media querie extendemos a largura da header e do footer para que ocupem toda a linha.
+
+```html
+<style>
+  .item1 {
+    background: LightSkyBlue;
+    grid-area: header;
+  }
+
+  .item2 {
+    background: LightSalmon;
+    grid-area: advert;
+  }
+
+  .item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+  }
+
+  .item4 {
+    background: lightpink;
+    grid-area: footer;
+  }
+
+  .container {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header"
+      "advert"
+      "content"
+      "footer";
+  }
+
+  @media (min-width: 300px) {
+    .container {
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "advert header"
+        "advert content"
+        "advert footer";
+    }
+  }
+
+  @media (min-width: 400px) {
+    .container {
+      /* change the code below this line */
+
+      grid-template-areas:
+        "header header"
+        "advert content"
+        "footer footer";
+
+      /* change the code above this line */
+    }
+  }
+</style>
+
+<div class="container">
+  <div class="item1">header</div>
+  <div class="item2">advert</div>
+  <div class="item3">content</div>
+  <div class="item4">footer</div>
+</div>
+```
+
+## Grid dentro de grid
+
+A propriedade grid afeta seus descendentes diretos, então por isso podemos criar elementos filhos com a propriedade grid tendo assim um grid dentro de outro grid.
+
+```html
+<style>
+  .container {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "advert header"
+      "advert content"
+      "advert footer";
+  }
+  .item1 {
+    background: LightSkyBlue;
+    grid-area: header;
+  }
+
+  .item2 {
+    background: LightSalmon;
+    grid-area: advert;
+  }
+
+  .item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+    /* enter your code below this line */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* enter your code above this line */
+  }
+
+  .item4 {
+    background: lightpink;
+    grid-area: footer;
+  }
+
+  .itemOne {
+    background: PaleGreen;
+  }
+
+  .itemTwo {
+    background: BlanchedAlmond;
+  }
+</style>
+
+<div class="container">
+  <div class="item1">header</div>
+  <div class="item2">advert</div>
+  <div class="item3">
+    <div class="itemOne">paragraph1</div>
+    <div class="itemTwo">paragraph2</div>
+  </div>
+  <div class="item4">footer</div>
+</div>
+```
