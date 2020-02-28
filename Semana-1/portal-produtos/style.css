@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #eee;
+  --yellow: #f1c40f;
+  --orange: orange;
+  --black: black;
+  --grey: #ccc;
+}
+
+body {
+  background-color: var(--background);
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: var(--background);
+}
+
+.menu div:first-child {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main {
+  padding-top: 7rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main h1 {
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-control {
+  padding: 5px;
+  width: 250px;
+}
+
+.btn {
+  background-color: var(--yellow);
+  border: none;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+
+.btn:hover {
+  background-color: var(--orange);
+  transition: background-color 1s;
+}
+
+.feature {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.feature h2 {
+  margin: 0;
+}
+
+.feature p {
+  margin: 0;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+.video > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan {
+  width: 250px;
+  border: 1px solid var(--black);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-header {
+  background-color: var(--grey);
+  padding: 15px 0px;
+  font-weight: bold;
+}
+
+.plan > button {
+  margin-bottom: 15px;
+}
+
+.footer {
+  background-color: var(--grey);
+  width: 100%;
+  padding: 20px;
+  text-align: right;
+}
+
+.footer > p {
+  margin: 0;
+}
+
+.footer > div > span {
+  margin-left: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 800px) {
+  .plans {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .plan:first-child {
+    margin-right: 15px;
+  }
+
+  .plan:last-child {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 550px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature {
+    text-align: left;
+    width: 60%;
+  }
+}
