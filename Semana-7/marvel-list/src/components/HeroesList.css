@@ -1,0 +1,5 @@
+.heroes-list {
+  display: grid;
+  grid-template-columns: 10fr 10fr 10fr 10fr;
+  gap: 2vw;
+}
