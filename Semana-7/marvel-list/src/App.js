@@ -2,8 +2,7 @@ import React from "react";
 import { fetchCharacters, fetchCharactersByName } from "./api/api";
 import Container from "./components/Container";
 import Header from "./components/Header";
-import HeroesList from "./components/HeroesList";
-import NotFound from "./components/NotFound";
+import Routes from "./routes";
 
 import "./App.css";
 
@@ -52,7 +51,7 @@ function App() {
   return (
     <Container>
       <Header input={input} onChange={handleChangeInput} error={error} />
-      {heroes.length ? <HeroesList heroes={heroes} /> : <NotFound />}
+      <Routes />
     </Container>
   );
 }
