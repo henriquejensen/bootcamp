@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
+a {
+  color: #03a9f4;
+  text-decoration: none;
+}
+
+.App {
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+}
+
+.App h1 {
+  background-color: #f6f6f6;
+  padding: 15px;
+}
