@@ -21,3 +21,36 @@ Nos casos em que a imagem já foi explicada pelo texto da página ou ela é some
 
 ## Hierarquia de conteudo relacionado - h1,h2,h3,h4,h5,h6
 
+## Tags semanticas
+
+### main
+
+tag que representa o conteudo principal da pagina, deve existir somente um por pagina. É o conteudo central, portanto nao deve conter conteudo que se repete, tal como menu de navegação
+
+### article
+
+Utilizado para encapsular grupos independentes
+
+### sections
+
+Utilizado para encapsular grupos de conteudo relacionados
+
+### header
+
+É utilizado para encapsular conteudos introdutorios ou links de navegação do componenten pai
+
+### nav
+
+Utilizado para encapsular o elemento de navegação principal da pagina.
+
+### footer
+
+Utilizado para encapsular informações que vão principalmente na parte de baixo da página.
+
+### audio
+
+Elemento para encapsular audio ou video da pagina. Ele suporta os controles default do browser como play, pause e etc.
+
+### figure e figcaption
+
+Eles são utilizados juntos para encapsular representações visuais (como imagens, graficos, diagramas) junto com sua caption (breve texto explicativo)

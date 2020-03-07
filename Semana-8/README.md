@@ -3,6 +3,7 @@
 ## Gerenciando estado
 
 - Flux pattern
+- Context
 - Redux
 - Redux Persist
 
