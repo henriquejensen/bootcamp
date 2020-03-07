@@ -1,0 +1,36 @@
+.container-thread {
+  margin-top: 15px;
+  padding: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.thread-body {
+  padding: 20px 0px;
+}
+
+.thread-footer {
+  display: flex;
+}
+
+.thread-user-data {
+  padding: 0px 15px;
+  flex: 1;
+}
+
+.thread-user-data span {
+  font-weight: bold;
+}
+
+.thread-footer-reply {
+  border-top: 1px solid #eee;
+  display: flex;
+  padding: 10px 30px;
+}
+
+.thread-footer-reply-content {
+  flex: 1;
+  padding-left: 20px;
+}
